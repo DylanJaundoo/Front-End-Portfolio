@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Font Links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;500;600&family=Karla:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <!--Icon Script-->
+    <script src="https://kit.fontawesome.com/ff610ebfa7.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+    <title>Mock Website - Dylan Jaundoo</title>
+</head>
+<body>
+    <!-- Header/Navbar-->
+    <header class="header">
+     <a href="#" class="logo">Dylan.</a>
+     <nav class="navbar">  
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#timeline">Resume</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+     </nav>
+
+    </header>
+
+    <!-- Home-Content-->
+    <section id="home">
+        <div class="home-content">
+            <h1>Front-End Portofilo</h1> 
+            <h3>Dylan Jaundoo</h3>
+            <p>Welcome to my first ever front-end project.
+                I am a first generation graduate making a break into the tech industry. 
+                 Feel free to check out more of my work by clicking the links below! </p>
+            <form method="get" action="#timeline">
+            <button class="button" type="submit">Continue</button>
+            </form>
+            <ul class="social-media">   
+                <li><button onclick="linkedin();"><i class="fa-brands fa-linkedin-in"></i></button></li>
+                <li><button onclick="github();"><i class="fa-brands fa-github"></i></button></li>
+                <li><button onclick="twitter();"><i class="fa-brands fa-twitter"></i></button></li>
+            </ul>
+            <hr>
+        </div>
+        
+         
+            
+       
+    </section>
+
+    <!-- Timeline-Content-->
+    <section id="timeline">
+        <div class="timeline-container">
+            <div class="title">
+                <h1>Employment Timeline</h1>
+                <p>Jobs</p>
+            </div>
+            <!-- Timeline-1-->
+            <div class="checkpoint">
+                <div>
+                    <h2>Wonderful Pizza Cashier- </h2>
+                    <h3>July 2018 - August 2018 </h3>
+                    <h3>Queens, NY 391 Peninsula Blvd</h3>
+                    <ul>
+                        <li>Experience with handling money</li>
+                        <li>Managed cash flow from start to end of work day.</li>
+                        <li>Made transactions swiftly and clearly. </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Timeline-2-->
+            <div class="checkpoint">
+                <div>
+                    <h2>CUNY Service Corps - Research Assistant</h2>
+                    <h3> May 2021 - August 2021 </h3>
+                    <h3>Queens, NY</h3>
+                    <ul>
+                        <li> Researched non-profit organizations within 
+                             the NY area to participate in CUNY Service Corps recruitment for upcoming students. 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Timeline-3-->
+            <div class="checkpoint">
+                <div>
+                    <h2>Peer Navigator</h2>
+                    <h3> August 2021- Present </h3>
+                    <h3>Brooklyn, NY 300 Jay st</h3>
+                    <ul>
+                        <li>Facilitated the connection between students and life on campus.</li>
+                        <li>Coordinate events such as graduation, talent shows, and freshman orientation week.</li>
+                        <li>Maintained upkeep of College Food Pantry i.e restocking/packing</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Timeline 4-->
+            <div class="checkpoint">
+                <div>
+                    <h2>I.T Assistant - Internship</h2>
+                    <h3> January 2023 - May 2023 </h3>
+                    <h3>Brooklyn, NY 300 Jay st</h3>
+                    <ul>
+                        <li>Upkeep/Perform maintenance on office and food pantry computers.</li>
+                        <li>Maintain SLD email/answer inquiries.</li>
+                        <li>Install new desktop and 2-in-1 setups for staff.</li>
+                        <li>Maintain/Grow Student Life social media via Instagram and Facebook.</li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- About-Content-->
+    <section id="about">
+        <div class="about-container">
+            <div class="about-content-left">
+                <h1>Dylan Jaundoo</h1>
+                <h3>Web Developer</h3>
+                <hr>
+                <p>Hi, my name is Dylan Jaundoo I am a passionate web devleoper, born and raised in <b>Queens, NY</b>. 
+                    I enjoy the creative process of designing and producing websites as well as the rational nature of coding. 
+                    I graduated in June of 2023 with a bachelors in Computer Systems and I took this summer 
+                    to improve upon my web design skills and create various sites like this one.
+                    In the future I would like to venture beyond web design into mobile applications and game design.</p>                    
+            </div>
+            <div class="about-img">
+                <img src="/images/My project.png" alt="placeholder Image"> 
+            </div>
+
+            
+       
+         </div>
+     </div>
+    </section>
+
+    <!-- Contact-Content-->
+    <section id="contact">
+        <div class="contact-container">
+            <form action="https://formsubmit.co/dylanjaundoo@gmail.com" method="POST" />
+                <h1>Contact Me</h1>
+                <input type="text" name="First Name" id="firstName" placeholder="First Name" required>
+                <input type="text" name="Last Name" id="lastName" placeholder="Last Name" required>
+                <input type="email" name="Email" id="email" placeholder="Email" required>
+                <h4>Send me a Message</h4>
+                <textarea name="message" id ="textarea" required></textarea>
+                <input type="submit" id="submitButton" >
+            </form>            
+        </div>
+    </section>
+</body>
+</html>
