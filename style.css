@@ -73,7 +73,6 @@ section{
 #home{
     height: 100vh;
     width: 100%;
-    
     padding: 0 10%;
     background: linear-gradient(342deg, rgba(8,27,41,1) 81%, rgba(0,212,255,1) 100%);
 }
@@ -174,7 +173,7 @@ hr{
     width: 100%;
 }
 
-/* Responsive Design Home Content */
+
 
 /* -------------Timeline Styling----------------*/
 
@@ -193,15 +192,16 @@ body::before{
     height: 180vh;
     width: 100%;
     display: flex;
-    align-items: center;
+    
     justify-content: center;
     background: linear-gradient(71deg, rgba(0,212,255,1) 0%, rgba(8,27,41,1) 0%, rgba(8,27,41,1) 89%, rgba(0,212,255,1) 100%);
+    
 }
 
 .title{
     text-align: center;
     padding: 2rem;
-    margin-top: 15px;
+  
     
 }
 
@@ -216,6 +216,8 @@ body::before{
 .timeline-container{
     padding: 2rem;
     margin: 2rem auto;
+
+    
     
 }
 
@@ -359,6 +361,7 @@ body::before{
     border-radius: 50%;
     justify-content: end;
     align-items: end;
+    
 }
 
 .about-img img:hover{
@@ -437,8 +440,97 @@ body::before{
 }
 
 
-/* Responsive Design - Mobile - 520px - In Progress will update via GitHub */
+/* Responsive Design - Mobile - 520px - Updated via GITHUB*/
 @media screen and (max-width: 520px) {
 
+    
+    section{
+        height: 100%;
+        width: 100vw;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } 
+
+    .home-content p{
+        width: 50vw;
+    }
+
+    hr{
+        width: 80%;
+    }
+
+    /* Timeline */ 
+
+    #timeline{
+        width: 100%;
+    }
+    .checkpoint:nth-child(odd){
+        border-left: 0px solid #ededed;
+        padding-left: 0rem;
+        transform: translate(0rem);
+        left: 0px;
+        
+    }
+    
+    .checkpoint:nth-child(even){
+        border-right: 0px solid #ededed;
+        padding-right: 0rem;
+        transform: translate(0rem);
+    }
+    
+    
+    .checkpoint:nth-child(even)::before,
+    .checkpoint:nth-child(odd)::before{
+        content: '';
+        background: #ededed;
+        width: 0rem;
+        height: 0px;
+        position: absolute;
+        top:50%;
+        transform: translateY(-50%);
+    }
+    
+    .checkpoint:nth-child(odd)::before{
+        left:0;
+    }
+    
+    .checkpoint:nth-child(even)::before{
+        right: 0;
+    }
+
+
+        /*About*/
+   
+    #about{
+        width: 100%;
+    }
+    .about-container{
+        max-width: 100%;
+        margin: 0 10px; 
+        flex-direction: column;
+    }
+
+    #about hr {
+       width: 100%;
+    }
+
+    /*Contact */
+    
+    .contact-container{
+        max-width: 100vw;
+        max-height: 100vh;
+        
+    }
+    
+    .contact-container form{
+        height: 100vh;
+        width: 100%;
+    }
+    
+    .contact-container form textarea{ 
+        width: 450px;
+    }
    
 }
